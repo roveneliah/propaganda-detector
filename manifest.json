@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Article Context Injector",
+    "version": "1.0",
+    "description": "Injects context and red flags for potentially misleading articles",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://api.openai.com/"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+}
+

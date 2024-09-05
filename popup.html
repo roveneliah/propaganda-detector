@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Article Context Injector</title>
+    <style>
+      body { width: 300px; padding: 10px; }
+      #apiKeyInput { width: 100%; margin-bottom: 10px; }
+      #result { margin-top: 10px; }
+      #apiKeyStatus { margin-bottom: 10px; font-weight: bold; }
+    </style>
+  </head>
+  <body>
+    <div id="apiKeyStatus"></div>
+    <div id="apiKeySection">
+      <input type="text" id="apiKeyInput" placeholder="Enter your OpenAI API Key">
+      <button id="saveApiKey">Save API Key</button>
+    </div>
+    <div id="result"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
